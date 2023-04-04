@@ -75,8 +75,8 @@ function(rapids_cpm_rmm)
   rapids_cpm_find(rmm ${version} ${ARGN} {_RAPIDS_UNPARSED_ARGUMENTS}
                   GLOBAL_TARGETS rmm::rmm
                   CPM_ARGS
-                  GIT_REPOSITORY ${repository}
-                  GIT_TAG ${tag}
+                  GIT_REPOSITORY https://github.com/ahendriksen/rmm.git
+                  GIT_TAG        enh-move-logging-assert
                   GIT_SHALLOW ${shallow}
                   PATCH_COMMAND ${patch_command}
                   EXCLUDE_FROM_ALL ${to_exclude}
